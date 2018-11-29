@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Grid, Row, Col } from 'react-bootstrap';
 import { Pie, Bar, Polar, Scatter, Bubble } from 'react-chartjs-2';
 import PropTypes from 'prop-types';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import IntroPage from './IntroPage';
 import { 
@@ -52,39 +53,39 @@ class Analysis extends React.Component {
 
                 <ul>
                   <li>
-                    <a href='#gender'>Gender</a>
+                    <AnchorLink href='#gender'>Gender</AnchorLink>
                     <small>- Pie chart</small>
                   </li>
                   <li>
-                    <a href='#nationality'>Nationality</a>
+                    <AnchorLink href='#nationality'>Nationality</AnchorLink>
                     <small>- Single Bar chart</small>
                   </li>
                   <li>
-                    <a href='#grade_gender'>Grade levels with Gender</a>
+                    <AnchorLink href='#grade_gender'>Grade levels with Gender</AnchorLink>
                     <small>- Stacked Bar chart</small>
                   </li>
                   <li>
-                    <a href='#class'>Class</a>
+                    <AnchorLink href='#class'>Class</AnchorLink>
                     <small>- Polar Area chart</small>
                   </li>
                   <li>
-                    <a href='#topic'>Topic</a>
+                    <AnchorLink href='#topic'>Topic</AnchorLink>
                     <small>- Single Bar chart</small>
                   </li>
                   <li>
-                    <a href='#topic_class'>Topic with Class</a>
+                    <AnchorLink href='#topic_class'>Topic with Class</AnchorLink>
                     <small>- Multiple Bar chart</small>
                   </li>
                   <li>
-                    <a href='#raisedhands_visitedresources'>Raised Hands over Visited Resources</a>
+                    <AnchorLink href='#raisedhands_visitedresources'>Raised Hands over Visited Resources</AnchorLink>
                     <small>- Scatter plot</small>
                   </li>
                   <li>
-                    <a href='#announcementsview_discussion_topic'>Announcements View over Discussion with Topic</a>
+                    <AnchorLink href='#announcementsview_discussion_topic'>Announcements View over Discussion with Topic</AnchorLink>
                     <small>- Bubble plot</small>
                   </li>
                   <li>
-                    <a href='#raisedhands_discussion_topic'>Raised Hands over Discussion with Nationality</a>
+                    <AnchorLink href='#raisedhands_discussion_topic'>Raised Hands over Discussion with Nationality</AnchorLink>
                     <small>- Bubble plot</small>
                   </li>
                 </ul>
@@ -93,7 +94,7 @@ class Analysis extends React.Component {
             </Col>
             <Col md={8}>
 
-              <div className="right-charts">
+              <div id="top" className="right-charts">
                 
                 <h1>List of Charts</h1>
 
@@ -105,9 +106,10 @@ class Analysis extends React.Component {
                   </p>
                 </div>
 
-                <div className="chart">
-                  <h3 id="gender">Gender</h3>
-                  
+                <div id="gender" className="chart">
+                  <h3>Gender</h3>
+                  <AnchorLink href="#top">Top</AnchorLink>
+
                   <div className="comment primary">
                     <h4 className="title">Description</h4>
                     <p className="message">This school has 64% male students and 36% female students.</p>
@@ -120,9 +122,12 @@ class Analysis extends React.Component {
                   </Row>
                 </div>
 
-                <div className="chart">
-                  <h3 id="nationality">Nationality</h3>
-                  
+                <hr className="dotted" />
+
+                <div id="nationality" className="chart">
+                  <h3>Nationality</h3>
+                  <AnchorLink href="#top">Top</AnchorLink>
+
                   <div className="comment primary">
                     <h4 className="title">Description</h4>
                     <p className="message">This school has students from 14 different countries.</p>
@@ -131,9 +136,12 @@ class Analysis extends React.Component {
                   <Bar data={ nationalityChart.data } options={ nationalityChart.options } />
                 </div>
 
-                <div className="chart">
-                  <h3 id="grade_gender">Grade levels with Gender</h3>
-                  
+                <hr className="dotted" />
+
+                <div id="grade_gender" className="chart">
+                  <h3>Grade levels with Gender</h3>
+                  <AnchorLink href="#top">Top</AnchorLink>
+
                   <div className="comment primary">
                     <h4 className="title">Description</h4>
                     <p className="message">There are no students in Grade-1 and Grade-3. Also, there are more female students in Grade 12; on the other hand, there are no female students in Grade-10.</p>
@@ -142,9 +150,12 @@ class Analysis extends React.Component {
                   <Bar data={ gradeChart.data } options={ gradeChart.options } />
                 </div>
 
-                <div className="chart">
-                  <h3 id="class">Class</h3>
-                  
+                <hr className="dotted" />
+
+                <div id="class" className="chart">
+                  <h3>Class</h3>
+                  <AnchorLink href="#top">Top</AnchorLink>
+
                   <div className="comment primary">
                     <h4 className="title">Description</h4>
                     <p className="message">
@@ -167,9 +178,12 @@ class Analysis extends React.Component {
                   </Row>
                 </div>
 
-                <div className="chart">
-                  <h3 id="topic">Topic</h3>
-                  
+                <hr className="dotted" />
+
+                <div id="topic" className="chart">
+                  <h3>Topic</h3>
+                  <AnchorLink href="#top">Top</AnchorLink>
+
                   <div className="comment primary">
                     <h4 className="title">Description</h4>
                     <p className="message">There are 12 different topics, and most students take classes in IT/Science and Language.</p>
@@ -178,9 +192,12 @@ class Analysis extends React.Component {
                   <Bar data={ topicChart.data } options={ topicChart.options } />
                 </div>
 
-                <div className="chart">
-                  <h3 id="topic_class">Topic with Class</h3>
-                  
+                <hr className="dotted" />
+
+                <div id="topic_class" className="chart">
+                  <h3 >Topic with Class</h3>
+                  <AnchorLink href="#top">Top</AnchorLink>
+
                   <div className="comment primary">
                     <h4 className="title">Description</h4>
                     <p className="message">There are many low-level students in a IT subject, but there are few low-level students in Biology and Quran subjects.</p>
@@ -189,9 +206,12 @@ class Analysis extends React.Component {
                   <Bar data={ topicClassChart.data } options={ topicClassChart.options } />
                 </div>
 
-                <div className="chart">
-                  <h3 id="raisedhands_visitedresources">Raised Hands over Visited Resources</h3>
-                  
+                <hr className="dotted" />
+
+                <div id="raisedhands_visitedresources" className="chart">
+                  <h3>Raised Hands over Visited Resources</h3>
+                  <AnchorLink href="#top">Top</AnchorLink>
+
                   <div className="comment primary">
                     <h4 className="title">Description</h4>
                     <p className="message">This scatter plot shows us that there seems to be a little bit correlation between the two attributes.</p>
@@ -200,9 +220,12 @@ class Analysis extends React.Component {
                   <Scatter data={ raisedHandsVisitedResourcesChart.data } options={ raisedHandsVisitedResourcesChart.options } />
                 </div>
 
-                <div className="chart">
-                  <h3 id="announcementsview_discussion_topic">Announcements View over Discussion with Topic</h3>
-                  
+                <hr className="dotted" />
+
+                <div id="announcementsview_discussion_topic" className="chart">
+                  <h3>Announcements View over Discussion with Topic</h3>
+                  <AnchorLink href="#top">Top</AnchorLink>
+
                   <div className="comment primary">
                     <h4 className="title">Description</h4>
                     <p className="message">This bubble plot shows us that students in the IT course have more discussion, and Announcements View is linearly correlated with Discusstion.</p>
@@ -211,8 +234,11 @@ class Analysis extends React.Component {
                   <Bubble data={ announcementsViewDiscussionTopicChart.data } options={ announcementsViewDiscussionTopicChart.options } />
                 </div>
 
-                <div className="chart">
-                  <h3 id="raisedhands_discussion_topic">Raised Hands over Discussion with Nationality</h3>
+                <hr className="dotted" />
+
+                <div id="raisedhands_discussion_topic" className="chart">
+                  <h3>Raised Hands over Discussion with Nationality</h3>
+                  <AnchorLink href="#top">Top</AnchorLink>
                   
                   <div className="comment primary">
                     <h4 className="title">Description</h4>

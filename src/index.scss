@@ -101,13 +101,16 @@
       color: #555;
       font-size: 20px;
       text-align: center;
+      margin-top: 50px;
     }
 
     .technologies {
       margin-top: 50px;
       text-align: center;
-      background-color: #555;
+      background-color: #337ab7;
       padding: 50px 0 70px 0;
+      border: 1px solid #aaa;
+      border-radius: 6px;
 
       > h3 {
         color: white;
@@ -304,6 +307,7 @@
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 4px;
+        background-color: #eee;
 
         > ul {
           list-style-type: none;
@@ -320,6 +324,7 @@
             }
 
             > a:hover {
+              color: #337ab7;
               text-decoration-style: double;
             }
 

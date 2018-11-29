@@ -64,13 +64,16 @@
 .landing .main .greeting {
   color: #555;
   font-size: 20px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px; }
 
 .landing .main .technologies {
   margin-top: 50px;
   text-align: center;
-  background-color: #555;
-  padding: 50px 0 70px 0; }
+  background-color: #337ab7;
+  padding: 50px 0 70px 0;
+  border: 1px solid #aaa;
+  border-radius: 6px; }
   .landing .main .technologies > h3 {
     color: white;
     margin-bottom: 50px; }
@@ -174,7 +177,8 @@
   .analysis .analysis-content .content-wrapper .left-sidenav {
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 4px; }
+    border-radius: 4px;
+    background-color: #eee; }
     .analysis .analysis-content .content-wrapper .left-sidenav > ul {
       list-style-type: none;
       line-height: 2; }
@@ -186,6 +190,7 @@
           color: #555;
           display: block; }
         .analysis .analysis-content .content-wrapper .left-sidenav > ul > li > a:hover {
+          color: #337ab7;
           text-decoration-style: double; }
         .analysis .analysis-content .content-wrapper .left-sidenav > ul > li > small {
           color: chocolate; }
