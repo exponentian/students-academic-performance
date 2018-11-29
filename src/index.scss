@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.landing,
+.about-dataset,
+.students,
+.analysis {
+  margin-bottom: 200px;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  
+  .nav-wrapper {
+    height: 70px;
+    
+    .brand {
+      float: left;
+      line-height: 70px;
+      vertical-align: middle;
+    }
+
+    .nav-link {
+      float: right;
+      line-height: 70px;
+      vertical-align: middle;
+
+      > a {
+        display: inline-block;
+        margin-left: 30px;
+      }
+
+    }
+
+  }
+
+}
+
+/* Jumbotron */
+
+.jumbotron-wrapper {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(/images/bg/knowledge.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  position: relative;
+  
+  .content {
+    display: inline-block;   
+
+    > h1 {
+      margin-top: 100px;
+    }
+
+    > h4 {
+      margin: 20px 0 40px 0;
+    }
+
+    > h3 {
+      margin-bottom: 120px;
+    }
+
+    > a {
+      color: white;
+      font-size: 20px;
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    > a:hover {
+      background-color: white;
+      color: rgba(0, 0, 0, 1);
+      text-decoration: none;
+    }
+  }
+}
+
+
+/* Langing */
+
+.landing {
+
+  .main {
+    
+    .greeting {
+      color: #555;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .technologies {
+      margin-top: 50px;
+      text-align: center;
+      background-color: #555;
+      padding: 50px 0 70px 0;
+
+      > h3 {
+        color: white;
+        margin-bottom: 50px;
+      }
+
+      .technologies-body {
+        
+        .tech {
+          width: 250px;
+          height: 250px;
+          padding: 20px;
+          display: inline-block;
+          border: 5px solid #aaa;
+          border-radius: 50%;
+          background-color: white;
+
+          > i,
+          > h4 {
+            color: chocolate;
+          }
+
+          > i {
+            margin-top: 20px;
+          }
+
+          > span {
+            display: block;
+            font-size: 15px;
+          }
+
+        }
+      
+      }
+
+    }
+
+  }
+
+}
+
+/* About dataset */
+
+.about-dataset {
+  line-height: 1.7;
+
+  .dataset-wrapper {
+    .panel {
+      margin-top: 30px;
+    }
+
+    ul,
+    ol {
+      margin-left: 30px;
+    }
+  }
+
+}
+
+
+/* Intro-page */
+.intro-page {
+  color: white;
+  width: 100%;
+  height: 150px;
+  display: inline-block;
+
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(/images/bg/pencil.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .content {
+
+    .title {
+      font-size: 30px;
+      font-weight: 500;
+      float: left;
+      line-height: 150px;
+      vertical-align: middle;
+      letter-spacing: 3px;
+    }
+
+    .navi {
+      font-size: 17px;
+      line-height: 250px;
+      float: right;
+
+      > span > a {
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+/* Students */
+
+.students {
+  margin-bottom: 200px;
+
+  .students-overview {
+    line-height: 1.7;
+
+    .overview-wrapper {
+      margin-top: 50px;
+
+      .overview {
+        margin-bottom: 50px;
+
+        ul {
+          margin-left: 30px;
+        }
+      }
+    }
+
+  }
+
+  .student-detail {
+    hr {
+      margin: 50px 0;
+    }
+    .detail-wrapper {
+      
+      .detail-header {
+        display: flex;
+        
+        .header-left {
+          flex: 40%;
+          text-align: center;
+
+          > img {
+            width: 200px;
+            height: auto;
+          }
+        }
+        
+        .header-right {
+          margin-left: 30px;
+          flex: 60%;
+          ul {
+            margin-left: 30px;
+          }
+        }
+      }
+
+      .detail-body {
+        > h3,
+        > h4 {
+          margin: 30px 0;
+        }
+
+        .panel {
+          margin-top: 40px;
+        }
+        
+        .chart {
+          margin-bottom: 40px;
+          text-align: center;
+        }
+        
+        .behaviour-stats > tbody > th > td {
+          font-weight: normal;
+        }
+
+      }
+
+      .detail-sidemenu {
+        width: 100%;
+
+        .item {
+          margin-bottom: 20px;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+/* Analysis */
+.analysis {
+  .analysis-content {
+
+    .content-wrapper {
+      margin-top: 30px;
+
+      .left-sidenav {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        > ul {
+          list-style-type: none;
+          line-height: 2;
+
+          > li {
+            font-size: 18px;
+            border-top: 1px solid #ccc;
+            padding: 10px;
+
+            > a {
+              color: #555;
+              display: block;
+            }
+
+            > a:hover {
+              text-decoration-style: double;
+            }
+
+            > small {
+              color: chocolate;
+            }
+          }
+        }
+      }
+
+      .right-charts {
+        .chart {
+          margin: 70px 0;
+
+          .comment {
+            margin: 20px;
+          }
+          
+          .reference {
+            background-color: #ddd;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px 30px;
+            
+            > span {
+              display: block;
+              font-weight: 500;
+            }
+            
+            > ul {
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+    
+    }
+  }
+}
+
+
+
+.comment {
+  margin: 0 20px;
+  padding: 10px 30px 20px 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-left-width: 5px;
+  border-left-color: #555;
+  border-right-width: 5px;
+  border-right-color: #555;
+
+  .title {
+    color: #555;
+  }
+
+  .message {
+    color: #444;
+  }
+
+}
+
+.comment.primary {
+  border-left-color: #337ab7;
+  border-right-color: #337ab7;
+
+  .title {
+    color: #337ab7;
+  }
+}
+
+.comment.success {
+  border-left-color: #5cb85c;
+  border-right-color: #5cb85c;
+  .title {
+    color: #5cb85c;
+  }
+}
+
+
+
+hr.dotted {
+  border-top: 1px dashed #8c8b8b;
+  border-bottom: 1px dashed #fff;
+  margin-top: 3px;
+  margin-bottom: 6px;
+}
+
+.make-center {
+  text-align: center;
+}

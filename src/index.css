@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.landing,
+.about-dataset,
+.students,
+.analysis {
+  margin-bottom: 200px; }
+
+/* Header */
+.header {
+  width: 100%; }
+  .header .nav-wrapper {
+    height: 70px; }
+    .header .nav-wrapper .brand {
+      float: left;
+      line-height: 70px;
+      vertical-align: middle; }
+    .header .nav-wrapper .nav-link {
+      float: right;
+      line-height: 70px;
+      vertical-align: middle; }
+      .header .nav-wrapper .nav-link > a {
+        display: inline-block;
+        margin-left: 30px; }
+
+/* Jumbotron */
+.jumbotron-wrapper {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/bg/knowledge.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  position: relative; }
+  .jumbotron-wrapper .content {
+    display: inline-block; }
+    .jumbotron-wrapper .content > h1 {
+      margin-top: 100px; }
+    .jumbotron-wrapper .content > h4 {
+      margin: 20px 0 40px 0; }
+    .jumbotron-wrapper .content > h3 {
+      margin-bottom: 120px; }
+    .jumbotron-wrapper .content > a {
+      color: white;
+      font-size: 20px;
+      padding: 10px;
+      border: 1px solid white;
+      border-radius: 4px;
+      transition: 0.3s; }
+    .jumbotron-wrapper .content > a:hover {
+      background-color: white;
+      color: black;
+      text-decoration: none; }
+
+/* Langing */
+.landing .main .greeting {
+  color: #555;
+  font-size: 20px;
+  text-align: center; }
+
+.landing .main .technologies {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #555;
+  padding: 50px 0 70px 0; }
+  .landing .main .technologies > h3 {
+    color: white;
+    margin-bottom: 50px; }
+  .landing .main .technologies .technologies-body .tech {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    display: inline-block;
+    border: 5px solid #aaa;
+    border-radius: 50%;
+    background-color: white; }
+    .landing .main .technologies .technologies-body .tech > i,
+    .landing .main .technologies .technologies-body .tech > h4 {
+      color: chocolate; }
+    .landing .main .technologies .technologies-body .tech > i {
+      margin-top: 20px; }
+    .landing .main .technologies .technologies-body .tech > span {
+      display: block;
+      font-size: 15px; }
+
+/* About dataset */
+.about-dataset {
+  line-height: 1.7; }
+  .about-dataset .dataset-wrapper .panel {
+    margin-top: 30px; }
+  .about-dataset .dataset-wrapper ul,
+  .about-dataset .dataset-wrapper ol {
+    margin-left: 30px; }
+
+/* Intro-page */
+.intro-page {
+  color: white;
+  width: 100%;
+  height: 150px;
+  display: inline-block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/bg/pencil.jpg);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .intro-page .content .title {
+    font-size: 30px;
+    font-weight: 500;
+    float: left;
+    line-height: 150px;
+    vertical-align: middle;
+    letter-spacing: 3px; }
+  .intro-page .content .navi {
+    font-size: 17px;
+    line-height: 250px;
+    float: right; }
+    .intro-page .content .navi > span > a {
+      color: white; }
+
+/* Students */
+.students {
+  margin-bottom: 200px; }
+  .students .students-overview {
+    line-height: 1.7; }
+    .students .students-overview .overview-wrapper {
+      margin-top: 50px; }
+      .students .students-overview .overview-wrapper .overview {
+        margin-bottom: 50px; }
+        .students .students-overview .overview-wrapper .overview ul {
+          margin-left: 30px; }
+  .students .student-detail hr {
+    margin: 50px 0; }
+  .students .student-detail .detail-wrapper .detail-header {
+    display: flex; }
+    .students .student-detail .detail-wrapper .detail-header .header-left {
+      flex: 40%;
+      text-align: center; }
+      .students .student-detail .detail-wrapper .detail-header .header-left > img {
+        width: 200px;
+        height: auto; }
+    .students .student-detail .detail-wrapper .detail-header .header-right {
+      margin-left: 30px;
+      flex: 60%; }
+      .students .student-detail .detail-wrapper .detail-header .header-right ul {
+        margin-left: 30px; }
+  .students .student-detail .detail-wrapper .detail-body > h3,
+  .students .student-detail .detail-wrapper .detail-body > h4 {
+    margin: 30px 0; }
+  .students .student-detail .detail-wrapper .detail-body .panel {
+    margin-top: 40px; }
+  .students .student-detail .detail-wrapper .detail-body .chart {
+    margin-bottom: 40px;
+    text-align: center; }
+  .students .student-detail .detail-wrapper .detail-body .behaviour-stats > tbody > th > td {
+    font-weight: normal; }
+  .students .student-detail .detail-wrapper .detail-sidemenu {
+    width: 100%; }
+    .students .student-detail .detail-wrapper .detail-sidemenu .item {
+      margin-bottom: 20px; }
+
+/* Analysis */
+.analysis .analysis-content .content-wrapper {
+  margin-top: 30px; }
+  .analysis .analysis-content .content-wrapper .left-sidenav {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px; }
+    .analysis .analysis-content .content-wrapper .left-sidenav > ul {
+      list-style-type: none;
+      line-height: 2; }
+      .analysis .analysis-content .content-wrapper .left-sidenav > ul > li {
+        font-size: 18px;
+        border-top: 1px solid #ccc;
+        padding: 10px; }
+        .analysis .analysis-content .content-wrapper .left-sidenav > ul > li > a {
+          color: #555;
+          display: block; }
+        .analysis .analysis-content .content-wrapper .left-sidenav > ul > li > a:hover {
+          text-decoration-style: double; }
+        .analysis .analysis-content .content-wrapper .left-sidenav > ul > li > small {
+          color: chocolate; }
+  .analysis .analysis-content .content-wrapper .right-charts .chart {
+    margin: 70px 0; }
+    .analysis .analysis-content .content-wrapper .right-charts .chart .comment {
+      margin: 20px; }
+    .analysis .analysis-content .content-wrapper .right-charts .chart .reference {
+      background-color: #ddd;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px 30px; }
+      .analysis .analysis-content .content-wrapper .right-charts .chart .reference > span {
+        display: block;
+        font-weight: 500; }
+      .analysis .analysis-content .content-wrapper .right-charts .chart .reference > ul {
+        margin-left: 30px; }
+
+.comment {
+  margin: 0 20px;
+  padding: 10px 30px 20px 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-left-width: 5px;
+  border-left-color: #555;
+  border-right-width: 5px;
+  border-right-color: #555; }
+  .comment .title {
+    color: #555; }
+  .comment .message {
+    color: #444; }
+
+.comment.primary {
+  border-left-color: #337ab7;
+  border-right-color: #337ab7; }
+  .comment.primary .title {
+    color: #337ab7; }
+
+.comment.success {
+  border-left-color: #5cb85c;
+  border-right-color: #5cb85c; }
+  .comment.success .title {
+    color: #5cb85c; }
+
+hr.dotted {
+  border-top: 1px dashed #8c8b8b;
+  border-bottom: 1px dashed #fff;
+  margin-top: 3px;
+  margin-bottom: 6px; }
+
+.make-center {
+  text-align: center; }
