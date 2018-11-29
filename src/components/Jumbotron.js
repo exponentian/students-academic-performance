@@ -11,7 +11,7 @@ const Jumbotron = () => (
         <h4>xAPI-Educational Mining Dataset</h4>
         
         <h3>
-          <Link to='https://www.kaggle.com/aljarah/xAPI-Edu-Data/home'>in Kaggle Datasets</Link>
+          <a href='https://www.kaggle.com/aljarah/xAPI-Edu-Data/home'>in Kaggle Datasets</a>
         </h3>
         
         <Link to='/students'>Get Students' Information</Link>
