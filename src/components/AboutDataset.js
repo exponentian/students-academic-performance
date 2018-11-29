@@ -19,7 +19,7 @@ const AboutDataset = () => (
     
     <section className="container dataset-wrapper">
       <h3>About Dataset</h3>
-      <Link to=''>More Information</Link>
+      <Link to='https://www.kaggle.com/aljarah/xAPI-Edu-Data'>More Information</Link>
       
       <Panel>
         <Panel.Heading>
