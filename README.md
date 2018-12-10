@@ -3,7 +3,6 @@
 ### Technologies: React and Redux
 #### Author: Ho Seok (Brandon) Oh
 
-## [Demo](https://students-performance-hoseokoh.herokuapp.com/)
 
 > I am using [Students' Academic Performance Dataset](https://www.kaggle.com/aljarah/xAPI-Edu-Data) in [Kaggle](https://www.kaggle.com/) Datasets. Also, I add some fake students' information such as FirstName, LastName, Phone, and etc with [faker](https://github.com/marak/Faker.js/).
 
