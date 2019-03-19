@@ -28,7 +28,7 @@ const IntroPage = ({ menu }) => (
 
 IntroPage.propTypes = {
   menu: PropTypes.shape({
-    title: PropTypes.string.isRequried,
+    title: PropTypes.string.isRequired,
     navi: PropTypes.array.isRequired
   }).isRequired
 };

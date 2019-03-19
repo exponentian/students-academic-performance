@@ -3,6 +3,7 @@
 ### Technologies: React and Redux
 #### Author: Ho Seok (Brandon) Oh
 
+## [Demo](https://student-performance-hoseokoh.herokuapp.com/)
 
 > I am using [Students' Academic Performance Dataset](https://www.kaggle.com/aljarah/xAPI-Edu-Data) in [Kaggle](https://www.kaggle.com/) Datasets. Also, I add some fake students' information such as FirstName, LastName, Phone, and etc with [faker](https://github.com/marak/Faker.js/).
 
@@ -14,7 +15,7 @@
 - Using Frontend stylesheet libraries - [Bootstrap](https://react-bootstrap.github.io/), [Font Awesome](https://fontawesome.com/), [SASS](https://github.com/michaelwayman/node-sass-chokidar#readme)
 
 
-> Before implementing this web application, I first try to anlayze this dataset on a [Jupyter notebook](jupyter-notebook/exploratory-data-analysis.ipynb) with Python and [scikit-learn](https://scikit-learn.org/stable/) to check whether missing values exist and to understand several features. Also, I perform Machine Learning algorithms to get more important features.
+> Before implementing this web application, I first try to anlayze this dataset on a Jupyter notebook with Python and [scikit-learn](https://scikit-learn.org/stable/) to check whether missing values exist and to understand several features. Also, I perform Machine Learning algorithms to get more important features.
 
 
 #### How to convert CSV file to JSON
